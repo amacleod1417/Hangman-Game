@@ -147,7 +147,8 @@ if __name__ == "__main__":
     while not gameover(wrong_guesses, target_word, guessed_letters):
         draw_hanged_man (wrong_guesses)
         print (f"your word is {guessed_word}")
-        print ("current guess letters:", f"{joinguessedletters(guessed_letters)}/n")
+        print ("current guess letters:", f"{joinguessedletters(guessed_letters)}")
+    
 
         player_guess = getplayerinput(guessed_letters)
         if player_guess in target_word:
